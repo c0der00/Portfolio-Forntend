@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/contact', formData);
+      const response = await axios.post('https://portfolio-backend-kappa-five.vercel.app/api/contact', formData);
       alert(response.data);
     } catch (error) {
       console.error('Error sending email:', error);
